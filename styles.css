@@ -1,14 +1,13 @@
 :root {
-  --bg: #0e1020;
-  --surface: #161a2e;
-  --surface-2: #20253d;
-  --text: #eeecf5;
-  --muted: #a6abc4;
-  --line: #2b3152;
-  --accent: #ffb454;
-  --accent-soft: rgba(255, 180, 84, .13);
-  --violet: #a99bff;
-  --violet-soft: rgba(169, 155, 255, .16);
+  --bg: #0a0c10;
+  --surface: #12161c;
+  --surface-2: #1a2028;
+  --text: #e8ebf0;
+  --muted: #9ba6b4;
+  --line: #262e38;
+  --accent: #2ee6c5;
+  --accent-soft: rgba(46, 230, 197, .14);
+  --label: #fbbf5c;
   --font: "Space Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Consolas, Menlo, monospace;
   color-scheme: dark;
@@ -40,12 +39,12 @@ h3 { font-size: 1.35rem; font-weight: 600; }
   position: absolute; width: 1px; height: 1px; overflow: hidden;
   clip-path: inset(50%); white-space: nowrap;
 }
-.meta { font-family: var(--mono); font-size: .82rem; color: var(--violet); }
+.meta { font-family: var(--mono); font-size: .82rem; color: var(--label); }
 
 /* ── Scroll progress ── */
 .progress {
   position: fixed; inset: 0 0 auto; z-index: 11; height: 3px;
-  background: linear-gradient(90deg, var(--violet), var(--accent));
+  background: var(--accent);
   transform: scaleX(0); transform-origin: left;
 }
 
@@ -59,7 +58,7 @@ h3 { font-size: 1.35rem; font-weight: 600; }
 /* Blur sits on a pseudo-element: on the bar itself it would trap the fixed mobile menu */
 .bar::before {
   content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 999px;
-  background: rgba(22, 26, 46, .78);
+  background: rgba(18, 22, 28, .78);
   backdrop-filter: blur(14px);
   border: 1px solid var(--line);
 }
@@ -100,14 +99,14 @@ h3 { font-size: 1.35rem; font-weight: 600; }
   min-height: 100vh;
   min-height: 100svh;
   padding-block: 112px 56px;
-  background: radial-gradient(ellipse 55% 60% at 80% 35%, var(--violet-soft), transparent 70%);
+  background: radial-gradient(ellipse 55% 60% at 80% 35%, var(--accent-soft), transparent 70%);
 }
 .route-map {
   position: absolute; inset: 0; width: 100%; height: 100%;
   mask-image: linear-gradient(100deg, rgba(0, 0, 0, .06) 42%, #000 72%); /* keeps the route off the intro text */
 }
 .hero-grid { position: relative; display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
-.role { font-family: var(--mono); font-size: clamp(.95rem, 2.5vw, 1.1rem); color: var(--violet); min-height: 1.7em; }
+.role { font-family: var(--mono); font-size: clamp(.95rem, 2.5vw, 1.1rem); color: var(--label); min-height: 1.7em; }
 .typed::after { content: "_"; color: var(--accent); animation: blink 1s steps(2) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 h1 { font-size: clamp(3.25rem, 11vw, 6.5rem); line-height: 1; letter-spacing: -.03em; margin: 14px 0 26px; }
@@ -123,13 +122,13 @@ h1 .outline { color: transparent; -webkit-text-stroke: 1.5px var(--accent); }
 .btn:hover { translate: 0 -2px; }
 .btn.primary { background: var(--accent); color: var(--bg); }
 .btn.primary:hover { box-shadow: 0 10px 28px -10px var(--accent); }
-.btn.ghost { background: rgba(14, 16, 32, .6); color: var(--accent); }
+.btn.ghost { background: rgba(10, 12, 16, .6); color: var(--accent); }
 .btn.ghost:hover { background: var(--accent); color: var(--bg); }
 
 /* ── Pipeline widget ── */
 .pipeline {
   padding: 22px; border: 1px solid var(--line); border-radius: 20px;
-  background: rgba(22, 26, 46, .88); font-family: var(--mono);
+  background: rgba(18, 22, 28, .88); font-family: var(--mono);
 }
 .pipeline-head { display: flex; justify-content: space-between; gap: 12px; font-size: .78rem; color: var(--muted); }
 .stages { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin: 18px 0 14px; }
@@ -139,7 +138,7 @@ h1 .outline { color: transparent; -webkit-text-stroke: 1.5px var(--accent); }
   background: var(--surface-2); color: var(--text); font-size: .82rem; font-weight: 700;
 }
 .slot.pop { animation: pop .35s ease; }
-.slot.bubble { background: transparent; border: 1px dashed var(--violet); color: var(--violet); }
+.slot.bubble { background: transparent; border: 1px dashed var(--label); color: var(--label); }
 .stage.lit .slot { box-shadow: inset 0 -3px 0 var(--accent); }
 @keyframes pop { from { transform: translateX(-14px); opacity: .2; } }
 .pipeline-status { min-height: 1.7em; font-size: .78rem; color: var(--accent); }
@@ -159,7 +158,7 @@ h1 .outline { color: transparent; -webkit-text-stroke: 1.5px var(--accent); }
 .split { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: clamp(32px, 6vw, 72px); align-items: start; }
 .section-title { position: sticky; top: 104px; }
 .section-title h2 { font-size: clamp(2rem, 4vw, 2.5rem); }
-.section-title p { margin-top: 8px; font-family: var(--mono); font-size: .84rem; color: var(--violet); }
+.section-title p { margin-top: 8px; font-family: var(--mono); font-size: .84rem; color: var(--label); }
 @media (max-width: 860px) {
   .split { grid-template-columns: minmax(0, 1fr); }
   .section-title { position: static; }
@@ -181,10 +180,9 @@ h1 .outline { color: transparent; -webkit-text-stroke: 1.5px var(--accent); }
 .card:hover::before { opacity: 1; }
 .card > * { position: relative; }
 .card p { color: var(--muted); }
-.card .meta { color: var(--violet); }
-.card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.card .meta { color: var(--label); }
+.card-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
 .card-grid .meta { margin: 8px 0 12px; }
-@media (max-width: 1040px) { .card-grid { grid-template-columns: minmax(0, 1fr); } }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
 .chips li {
@@ -204,7 +202,7 @@ h1 .outline { color: transparent; -webkit-text-stroke: 1.5px var(--accent); }
 .stat { padding: 18px 20px; }
 .stat p { font-size: .85rem; }
 .details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 32px; }
-.details dt { font-family: var(--mono); font-size: .82rem; color: var(--violet); }
+.details dt { font-family: var(--mono); font-size: .82rem; color: var(--label); }
 .timeline { display: grid; gap: 18px; padding: 0 0 0 18px; list-style: none; border-left: 2px solid var(--line); }
 .timeline li { position: relative; }
 .timeline li::before {
@@ -212,7 +210,7 @@ h1 .outline { color: transparent; -webkit-text-stroke: 1.5px var(--accent); }
   border-radius: 50%; background: var(--accent);
 }
 .timeline p { font-size: .95rem; line-height: 1.5; }
-.timeline .meta { color: var(--violet); }
+.timeline .meta { color: var(--label); }
 @media (max-width: 720px) {
   .bento > *, .bento > .wide { grid-column: span 6; }
   .bento > .stat { grid-column: span 2; padding: 14px 12px; }

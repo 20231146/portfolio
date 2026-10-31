@@ -53,7 +53,6 @@ if (canvas) {
   const ctx = canvas.getContext('2d');
   const css = getComputedStyle(document.documentElement);
   const accent = css.getPropertyValue('--accent').trim();
-  const violet = css.getPropertyValue('--violet').trim();
   const line = css.getPropertyValue('--line').trim();
 
   const EXPLORE_MS = 16; // per settled node
@@ -176,9 +175,8 @@ if (canvas) {
 
     // Search tree spreading from the source
     const settled = Math.min(explored.length, Math.floor(elapsed / EXPLORE_MS));
-    ctx.strokeStyle = violet;
-    ctx.fillStyle = violet;
-    ctx.globalAlpha = 0.4 * fade;
+    ctx.strokeStyle = accent;
+    ctx.globalAlpha = 0.28 * fade;
     ctx.beginPath();
     for (let k = 0; k < settled; k++) {
       const n = explored[k];
