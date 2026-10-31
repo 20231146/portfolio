@@ -5,282 +5,274 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pradeep Singh | Computer Science, IIT Ropar</title>
   <meta name="description" content="Pradeep Singh, B.Tech CSE student at IIT Ropar. Full-stack developer and systems enthusiast.">
-  <style>
-    :root {
-      --bg: #fbfaf7;
-      --text: #1d2125;
-      --muted: #5c6670;
-      --line: #e3e0d8;
-      --accent: #0b6e6e;
-      --card: #ffffff;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #14181c;
-        --text: #e8e6e1;
-        --muted: #9aa3ab;
-        --line: #2a3138;
-        --accent: #5cc4bd;
-        --card: #1a2025;
-      }
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.65;
-    }
-    a { color: var(--accent); }
-    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 2px;
-    }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
-    header.top {
-      border-bottom: 1px solid var(--line);
-      padding: 16px 0;
-    }
-    header.top .wrap {
-      display: flex; flex-wrap: wrap; gap: 12px 24px;
-      justify-content: space-between; align-items: center;
-    }
-    header.top strong { font-size: 1.05rem; }
-    nav { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: system-ui, sans-serif; font-size: .92rem; }
-    nav a { color: var(--muted); text-decoration: none; }
-    nav a:hover { color: var(--accent); }
-
-    section { padding: 48px 0 12px; }
-    h1 { font-size: clamp(2.2rem, 7vw, 3.4rem); line-height: 1.1; margin: 0 0 16px; }
-    h2 { font-size: 1.5rem; margin: 0 0 20px; }
-    h3 { font-size: 1.1rem; margin: 0; }
-    p { margin: 0 0 14px; }
-    .lead { font-size: 1.2rem; color: var(--muted); max-width: 34em; }
-    .sans { font-family: system-ui, sans-serif; }
-    .meta { font-family: system-ui, sans-serif; font-size: .88rem; color: var(--muted); }
-
-    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; font-family: system-ui, sans-serif; }
-    .btn {
-      display: inline-block; padding: 10px 18px; border-radius: 6px;
-      border: 1px solid var(--accent); text-decoration: none; font-weight: 600; font-size: .95rem;
-      cursor: pointer; font-family: inherit;
-    }
-    .btn.primary { background: var(--accent); color: var(--bg); }
-    .btn.ghost { background: transparent; color: var(--accent); }
-
-    .item { padding: 20px 0; border-top: 1px solid var(--line); }
-    .item:first-of-type { border-top: 0; padding-top: 0; }
-    .item-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
-    .item ul { margin: 10px 0 8px; padding-left: 20px; }
-    .item li { margin-bottom: 4px; }
-    .tags { font-family: system-ui, sans-serif; font-size: .84rem; color: var(--muted); }
-
-    .skills { display: grid; gap: 10px; font-family: system-ui, sans-serif; font-size: .95rem; }
-    .skills div { display: grid; grid-template-columns: 150px 1fr; gap: 12px; }
-    .skills dt { color: var(--muted); }
-    .skills dd { margin: 0; }
-    @media (max-width: 520px) { .skills div { grid-template-columns: 1fr; gap: 0; } }
-
-    form { display: grid; gap: 14px; font-family: system-ui, sans-serif; }
-    label { display: grid; gap: 4px; font-size: .9rem; color: var(--muted); }
-    input, textarea {
-      font: inherit; color: var(--text); background: var(--card);
-      border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px;
-    }
-    textarea { min-height: 120px; resize: vertical; }
-    .hidden { display: none; }
-
-    footer { margin-top: 56px; padding: 24px 0; border-top: 1px solid var(--line); }
-
-    /* ── Scroll-reveal ── */
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
-
-    /* ── Active nav link ── */
-    nav a.active { color: var(--accent); font-weight: 600; }
-  </style>
+  <meta name="theme-color" content="#0a0c10">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0c10'/%3E%3Ctext x='16' y='22' font-family='monospace' font-weight='700' font-size='16' text-anchor='middle' fill='%232ee6c5'%3EPS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="top">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.6L4.4 7H3.9v.9L12 14.9l8.1-7V7h-.5L12 12.6z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  </svg>
+
+  <header class="site-header">
     <div class="wrap">
-      <strong>Pradeep Singh</strong>
+      <a class="logo" href="#home" aria-label="Pradeep Singh, back to top">PS</a>
+      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
       <nav aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main>
 
-    <section id="home">
-      <h1>Hi, I’m Pradeep Singh.</h1>
-      <p class="lead">
-        I’m a computer science student at IIT Ropar who builds full-stack web apps and enjoys working close to the machine, from REST APIs to CPU pipelines.
-      </p>
-      <p class="meta">B.Tech CSE, 2023–2027 · 8.55 CGPA · Codeforces Specialist (peak 1499)</p>
-      <div class="buttons">
-        <a class="btn primary" href="#projects">See my projects</a>
-        <a class="btn ghost" href="PradeepSingh_Resume.pdf" download>Download resume</a>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I’m a third-year B.Tech student in Computer Science and Engineering at the Indian Institute of Technology, Ropar. I like understanding the whole stack: building web platforms with clean APIs, and simulating how a CPU pipeline or a cache actually behaves.
-      </p>
-      <p>
-        Outside of code, I compete in athletics. I’ve represented IIT Ropar at the Inter-IIT Sports Meet and won a silver medal at the intra-college championship in 2024.
-      </p>
-      <p class="meta">
-        Senior Secondary (CBSE): 90.0%, 2022–23 · Secondary (CBSE): 89.8%, 2019–20
-      </p>
-      <p class="meta">
-        Coursework: Data Structures & Algorithms, Operating Systems, DBMS, Computer Networks, Computer Architecture, Software Engineering, Machine Learning, Probability & Statistics, Linear Algebra, Financial Risk Management.
-      </p>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="item">
-        <div class="item-head">
-          <h3>Software Engineer Intern, Pattern Technologies India</h3>
-          <span class="meta">Jun – Jul 2026</span>
+    <section id="home" class="hero">
+      <div class="meteors" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="role">
+            <span class="sr-only">Full-stack developer</span>
+            <span class="typed" aria-hidden="true">Full-stack developer</span>
+          </p>
+          <h1>Hi, I’m <span>Pradeep Singh</span></h1>
+          <p class="lead">
+            I’m a computer science student at IIT Ropar who builds full-stack web apps and enjoys working close to the machine, from REST APIs to CPU pipelines.
+          </p>
+          <div class="buttons">
+            <a class="btn primary" href="#projects">See my projects</a>
+            <a class="btn ghost" href="PradeepSingh_Resume.pdf" download>Download resume</a>
+          </div>
         </div>
-        <ul>
-          <li>Built a full-stack payroll automation web app on Snowflake, reading data through the Node.js Snowflake SDK.</li>
-          <li>Integrated LLM APIs through Bifrost to extract structured data from enterprise documents, with AWS KMS encryption protecting sensitive data.</li>
-          <li>Worked with Pattern’s production data architecture: how records are ingested, stored, transformed and served to client apps.</li>
-        </ul>
-        <p class="tags">Snowflake, Node.js, LLM APIs, AWS KMS</p>
+        <pre class="code-card" aria-hidden="true"><span class="c">// about.js</span>
+<span class="k">const</span> pradeep = {
+  degree: <span class="s">"B.Tech CSE"</span>,
+  institute: <span class="s">"IIT Ropar"</span>,
+  batch: <span class="s">"2023–2027"</span>,
+  cgpa: <span class="s">8.55</span>,
+  codeforces: <span class="s">"Specialist"</span>,
+  stack: [<span class="s">"React"</span>, <span class="s">"Node.js"</span>,
+          <span class="s">"PostgreSQL"</span>, <span class="s">"C++"</span>],
+};</pre>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>About me</h2>
+        <div class="about-grid">
+          <div>
+            <div class="about-text">
+              <p>
+                I’m a B.Tech student in Computer Science and Engineering at the Indian Institute of Technology, Ropar. I like understanding the whole stack: building web platforms with clean APIs, and simulating how a CPU pipeline or a cache actually behaves.
+              </p>
+              <p>
+                Outside of code, I compete in athletics. I’ve represented IIT Ropar at the Inter-IIT Sports Meet and won a silver medal at the intra-college championship in 2024.
+              </p>
+            </div>
+            <div class="stats">
+              <div class="stat"><strong>8.55</strong><span>CGPA</span></div>
+              <div class="stat"><strong>1499</strong><span>Codeforces peak</span></div>
+              <div class="stat"><strong>500+</strong><span>DSA problems</span></div>
+            </div>
+          </div>
 
-      <div class="item">
-        <div class="item-head">
-          <h3>Snehita Well-Being</h3>
-          <span class="meta">Feb – May 2026</span>
-        </div>
-        <p class="meta">Mental health counselling platform for IIT Ropar · <a href="https://github.com/">Code</a></p>
-        <ul>
-          <li>Built a full-stack platform for confidential counselling appointments and profile records.</li>
-          <li>Designed REST APIs with JWT authentication and role-based access control, with separate counsellor and student portals.</li>
-          <li>Structured the backend as MVC with Node.js, Express, Sequelize and PostgreSQL, and containerized it with Docker.</li>
-        </ul>
-        <p class="tags">React, Node.js, Express, PostgreSQL, Docker</p>
-      </div>
+          <div class="tabs">
+            <div class="tab-list" role="tablist" aria-label="Background">
+              <button class="tab" type="button" role="tab" id="tab-skills" aria-controls="panel-skills" aria-selected="true">Skills</button>
+              <button class="tab" type="button" role="tab" id="tab-education" aria-controls="panel-education" aria-selected="false">Education</button>
+              <button class="tab" type="button" role="tab" id="tab-coursework" aria-controls="panel-coursework" aria-selected="false">Coursework</button>
+            </div>
 
-      <div class="item">
-        <div class="item-head">
-          <h3>RISC-V Assembler & 5-Stage Pipeline Simulator</h3>
-          <span class="meta">Computer Architecture</span>
-        </div>
-        <p class="meta"><a href="https://github.com/">Code</a></p>
-        <ul>
-          <li>Wrote an assembler and a cycle-accurate 5-stage CPU simulator for a large RISC-V instruction subset.</li>
-          <li>Added a Branch Target Buffer with 1-bit dynamic prediction to reduce control hazards.</li>
-          <li>Made data forwarding and stalls configurable, to compare pipelined and non-pipelined throughput.</li>
-        </ul>
-        <p class="tags">C/C++, RISC-V, pipeline hazards, branch prediction</p>
-      </div>
+            <div role="tabpanel" id="panel-skills" aria-labelledby="tab-skills" tabindex="0">
+              <dl class="details">
+                <div><dt>Languages</dt><dd>C, C++, Python, JavaScript, SQL</dd></div>
+                <div><dt>Web &amp; backend</dt><dd>React, Node.js, Express, HTML/CSS, REST APIs</dd></div>
+                <div><dt>Data &amp; tools</dt><dd>PostgreSQL, MySQL, Snowflake, Supabase, Docker, Git, Linux, AWS KMS</dd></div>
+                <div><dt>Fundamentals</dt><dd>DSA, OOP, Operating Systems, Networks, Computer Architecture</dd></div>
+              </dl>
+            </div>
 
-      <div class="item">
-        <div class="item-head">
-          <h3>AIMS: Academic Information System</h3>
-          <span class="meta">Feb – Apr 2025</span>
-        </div>
-        <p class="meta">Course enrollment and approval workflow · <a href="https://github.com/">Code</a></p>
-        <ul>
-          <li>Built a portal with separate workflows for students, instructors, faculty advisors and admins.</li>
-          <li>Implemented two-step approvals (instructor, then faculty advisor) to catch prerequisite violations.</li>
-          <li>Built modular REST APIs with Express on Supabase (PostgreSQL) with real-time updates.</li>
-        </ul>
-        <p class="tags">Node.js, Express, Supabase, PostgreSQL</p>
-      </div>
+            <div role="tabpanel" id="panel-education" aria-labelledby="tab-education" tabindex="0">
+              <dl class="details">
+                <div><dt>2023–2027</dt><dd>B.Tech in Computer Science and Engineering, IIT Ropar<br>CGPA: 8.55</dd></div>
+                <div><dt>2022–2023</dt><dd>Senior Secondary (CBSE)<br>90.0%</dd></div>
+                <div><dt>2019–2020</dt><dd>Secondary (CBSE)<br>89.8%</dd></div>
+              </dl>
+            </div>
 
-      <div class="item">
-        <div class="item-head">
-          <h3>Cache Performance: LRU vs Splay Tree</h3>
-          <span class="meta">Jun 2025</span>
+            <div role="tabpanel" id="panel-coursework" aria-labelledby="tab-coursework" tabindex="0">
+              <ul class="chips">
+                <li>Data Structures &amp; Algorithms</li>
+                <li>Operating Systems</li>
+                <li>DBMS</li>
+                <li>Computer Networks</li>
+                <li>Computer Architecture</li>
+                <li>Software Engineering</li>
+                <li>Machine Learning</li>
+                <li>Probability &amp; Statistics</li>
+                <li>Linear Algebra</li>
+                <li>Financial Risk Management</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <p class="meta">Route caching in a traffic simulation · <a href="https://github.com/">Code</a></p>
-        <ul>
-          <li>Ran Dijkstra’s shortest-path routing on large city graphs, paired with LRU and splay tree caches.</li>
-          <li>Benchmarked hit/miss ratios, amortized rotation cost and repeated path recomputation under changing traffic load.</li>
-          <li>Showed the locality benefits of self-adjusting trees for real-time navigation.</li>
-        </ul>
-        <p class="tags">C++, Dijkstra, LRU cache, splay tree</p>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <dl class="skills">
-        <div><dt>Languages</dt><dd>C, C++, Python, JavaScript, SQL</dd></div>
-        <div><dt>Web & backend</dt><dd>React, Node.js, Express, HTML/CSS, REST APIs</dd></div>
-        <div><dt>Data & tools</dt><dd>PostgreSQL, MySQL, Snowflake, Supabase, Docker, Git, Linux, AWS KMS</dd></div>
-        <div><dt>Fundamentals</dt><dd>DSA, OOP, Operating Systems, Networks, Computer Architecture</dd></div>
-      </dl>
-    </section>
-
-    <section id="achievements">
-      <h2>Achievements</h2>
-      <div class="item">
-        <h3>Codeforces Specialist</h3>
-        <p>Peak rating of 1499, with four rated-contest finishes in the global top 10%.</p>
-      </div>
-      <div class="item">
-        <h3>500+ DSA problems solved</h3>
-        <p>Across LeetCode and GeeksforGeeks, covering graphs, dynamic programming, trees and more.</p>
-      </div>
-      <div class="item">
-        <h3>Inter-IIT Sports Meet</h3>
-        <p>Represented IIT Ropar, and won a silver medal at the intra-college athletic championship in 2024.</p>
+    <section id="experience" class="section">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <article class="card job">
+          <div class="job-head">
+            <h3>Software Engineer Intern</h3>
+            <p class="meta">Jun – Jul 2026</p>
+          </div>
+          <p class="company">Pattern Technologies India</p>
+          <ul class="duties">
+            <li>Built a full-stack payroll automation web app on Snowflake, reading data through the Node.js Snowflake SDK.</li>
+            <li>Integrated LLM APIs through Bifrost to extract structured data from enterprise documents, with AWS KMS encryption protecting sensitive data.</li>
+            <li>Worked with Pattern’s production data architecture: how records are ingested, stored, transformed and served to client apps.</li>
+          </ul>
+          <ul class="chips">
+            <li>Snowflake</li><li>Node.js</li><li>LLM APIs</li><li>AWS KMS</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        I’m looking for software engineering roles and research opportunities. Email me at
-        <a href="mailto:2023csb1146@iitrpr.ac.in">2023csb1146@iitrpr.ac.in</a>
-        or call <a href="tel:+917737458709">+91-7737458709</a>.
-      </p>
-      <p class="meta">
-        <a href="https://github.com/">GitHub</a> · <a href="https://linkedin.com/">LinkedIn</a>
-      </p>
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="card-grid">
 
-      <!-- Netlify Forms: submissions appear in your Netlify dashboard under Forms -->
-      <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact">
-        <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
-        <label>Your name
-          <input type="text" name="name" required autocomplete="name">
-        </label>
-        <label>Your email
-          <input type="email" name="email" required autocomplete="email">
-        </label>
-        <label>Message
-          <textarea name="message" required></textarea>
-        </label>
-        <div><button class="btn primary" type="submit">Send message</button></div>
-      </form>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/><path d="M5 12h4l2-3 2 5 2-2h4"/></svg></div>
+            <h3>Snehita Well-Being</h3>
+            <p class="meta">Feb – May 2026</p>
+            <p>A confidential mental health counselling platform for IIT Ropar, with appointments and profile records, JWT authentication, role-based access and separate counsellor and student portals. MVC backend, containerized with Docker.</p>
+            <ul class="chips">
+              <li>React</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Docker</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Rajat-14/DEP26.D08-Snehita-Wellbeing">View code →</a>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div>
+            <h3>RISC-V Assembler &amp; 5-Stage Pipeline Simulator</h3>
+            <p class="meta">Feb – Apr 2025</p>
+            <p>An assembler and cycle-accurate CPU simulator for a large RISC-V subset. A Branch Target Buffer with 1-bit prediction reduces control hazards, and configurable forwarding and stalls compare pipelined and non-pipelined throughput.</p>
+            <ul class="chips">
+              <li>C/C++</li><li>RISC-V</li><li>Pipeline hazards</li><li>Branch prediction</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Rajat-14/CS204_Group_Project">View code →</a>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+            <h3>AIMS: Academic Information System</h3>
+            <p class="meta">Jan – Feb 2026</p>
+            <p>A course enrollment portal with separate workflows for students, instructors, faculty advisors and admins. Two-step approvals catch prerequisite violations, backed by modular REST APIs with real-time updates.</p>
+            <ul class="chips">
+              <li>Node.js</li><li>Express</li><li>Supabase</li><li>PostgreSQL</li>
+            </ul>
+            <a class="card-link" href="https://github.com/rohit4kk/AIMS_Portal">View code →</a>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.3 8.2l4.5 7.6M17.7 8.2l-4.5 7.6"/></svg></div>
+            <h3>Cache Performance: LRU vs Splay Tree</h3>
+            <p class="meta">Jun 2025</p>
+            <p>Route caching in a traffic simulation: Dijkstra’s routing on large city graphs, paired with LRU and splay tree caches. Benchmarks hit/miss ratios and rotation cost, showing the locality benefits of self-adjusting trees for real-time navigation.</p>
+            <ul class="chips">
+              <li>C++</li><li>Dijkstra</li><li>LRU cache</li><li>Splay tree</li>
+            </ul>
+            <a class="card-link" href="https://github.com/rohit4kk/DSA_Project-SplayTree-">View code →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="wrap">
+        <h2>Achievements</h2>
+        <div class="card-grid three">
+          <article class="card">
+            <h3><a href="https://codeforces.com/profile/deep_gill">Codeforces Specialist</a></h3>
+            <p class="meta">Peak rating 1499</p>
+            <p>Four rated-contest finishes in the global top 10%.</p>
+          </article>
+          <article class="card">
+            <h3>500+ DSA problems solved</h3>
+            <p class="meta">LeetCode &amp; GeeksforGeeks</p>
+            <p>Covering graphs, dynamic programming, trees and more.</p>
+          </article>
+          <article class="card">
+            <h3>Inter-IIT Sports Meet</h3>
+            <p class="meta">Athletics</p>
+            <p>Represented IIT Ropar, and won a silver medal at the intra-college athletic championship in 2024.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Get in touch</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="contact-intro">I’m looking for software engineering roles and research opportunities.</p>
+            <ul class="contact-list">
+              <li><a href="mailto:2023csb1146@iitrpr.ac.in"><svg aria-hidden="true"><use href="#i-mail"/></svg>2023csb1146@iitrpr.ac.in</a></li>
+              <li><a href="tel:+917737458709"><svg aria-hidden="true"><use href="#i-phone"/></svg>+91-7737458709</a></li>
+            </ul>
+            <div class="socials">
+              <a href="https://github.com/20231146" aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
+              <a href="https://www.linkedin.com/in/pradeep-singh-gill-a82810286/" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+            </div>
+            <a class="btn ghost" href="PradeepSingh_Resume.pdf" download>Download resume</a>
+          </div>
+
+          <!-- GitHub Pages has no form backend: FormSubmit emails submissions to the address below.
+               The first submission sends an activation link to that inbox. -->
+          <form method="POST" action="https://formsubmit.co/2023csb1146@iitrpr.ac.in">
+            <input type="hidden" name="_subject" value="New message from your portfolio">
+            <input type="hidden" name="_next" value="https://20231146.github.io/portfolio/thanks.html">
+            <p class="hidden"><label>Don’t fill this out: <input name="_honey" tabindex="-1" autocomplete="off"></label></p>
+            <label>Your name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>Your email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+            <label>Message
+              <textarea name="message" required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    <div class="wrap meta">© 2026 Pradeep Singh · B.Tech Computer Science, IIT Ropar</div>
+    <div class="wrap">© 2026 Pradeep Singh · B.Tech Computer Science, IIT Ropar</div>
   </footer>
 
   <script src="script.js"></script>
