@@ -93,6 +93,13 @@
     .hidden { display: none; }
 
     footer { margin-top: 56px; padding: 24px 0; border-top: 1px solid var(--line); }
+
+    /* ── Scroll-reveal ── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── Active nav link ── */
+    nav a.active { color: var(--accent); font-weight: 600; }
   </style>
 </head>
 <body>
@@ -276,5 +283,6 @@
     <div class="wrap meta">© 2026 Pradeep Singh · B.Tech Computer Science, IIT Ropar</div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
