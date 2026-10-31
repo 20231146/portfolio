@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pradeep Singh | Computer Science, IIT Ropar</title>
   <meta name="description" content="Pradeep Singh, B.Tech CSE student at IIT Ropar. Full-stack developer and systems enthusiast.">
-  <meta name="theme-color" content="#0a0c10">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0c10'/%3E%3Ctext x='16' y='22' font-family='monospace' font-weight='700' font-size='16' text-anchor='middle' fill='%232ee6c5'%3EPS%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0e1020">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23ffb454'/%3E%3Ctext x='16' y='21.5' font-family='monospace' font-weight='700' font-size='15' text-anchor='middle' fill='%230e1020'%3EPS%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -19,10 +19,13 @@
     <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.6L4.4 7H3.9v.9L12 14.9l8.1-7V7h-.5L12 12.6z"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h8l6 6v13a1 1 0 0 1-1 1H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13v2h8v-2H8zm0 4v2h8v-2H8z"/></symbol>
   </svg>
 
+  <div class="progress" aria-hidden="true"></div>
+
   <header class="site-header">
-    <div class="wrap">
+    <div class="bar">
       <a class="logo" href="#home" aria-label="Pradeep Singh, back to top">PS</a>
       <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -42,14 +45,14 @@
   <main>
 
     <section id="home" class="hero">
-      <div class="meteors" aria-hidden="true"></div>
+      <canvas class="route-map" aria-hidden="true"></canvas>
       <div class="wrap hero-grid">
         <div>
           <p class="role">
             <span class="sr-only">Full-stack developer</span>
             <span class="typed" aria-hidden="true">Full-stack developer</span>
           </p>
-          <h1>Hi, I’m <span>Pradeep Singh</span></h1>
+          <h1><span>Pradeep</span> <span class="outline">Singh</span></h1>
           <p class="lead">
             I’m a computer science student at IIT Ropar who builds full-stack web apps and enjoys working close to the machine, from REST APIs to CPU pipelines.
           </p>
@@ -58,47 +61,47 @@
             <a class="btn ghost" href="PradeepSingh_Resume.pdf" download>Download resume</a>
           </div>
         </div>
-        <pre class="code-card" aria-hidden="true"><span class="c">// about.js</span>
-<span class="k">const</span> pradeep = {
-  degree: <span class="s">"B.Tech CSE"</span>,
-  institute: <span class="s">"IIT Ropar"</span>,
-  batch: <span class="s">"2023–2027"</span>,
-  cgpa: <span class="s">8.55</span>,
-  codeforces: <span class="s">"Specialist"</span>,
-  stack: [<span class="s">"React"</span>, <span class="s">"Node.js"</span>,
-          <span class="s">"PostgreSQL"</span>, <span class="s">"C++"</span>],
-};</pre>
+
+        <div class="pipeline" aria-hidden="true">
+          <div class="pipeline-head">
+            <span>RISC-V pipeline</span>
+            <span class="pipeline-clock">cycle 0</span>
+          </div>
+          <div class="stages">
+            <div class="stage"><div class="slot">lw</div>IF</div>
+            <div class="stage"><div class="slot">add</div>ID</div>
+            <div class="stage"><div class="slot">sw</div>EX</div>
+            <div class="stage"><div class="slot">beq</div>MEM</div>
+            <div class="stage"><div class="slot">sub</div>WB</div>
+          </div>
+          <p class="pipeline-status calm">Instructions flowing</p>
+        </div>
       </div>
     </section>
 
     <section id="about" class="section">
-      <div class="wrap">
-        <h2>About me</h2>
-        <div class="about-grid">
-          <div>
-            <div class="about-text">
-              <p>
-                I’m a B.Tech student in Computer Science and Engineering at the Indian Institute of Technology, Ropar. I like understanding the whole stack: building web platforms with clean APIs, and simulating how a CPU pipeline or a cache actually behaves.
-              </p>
-              <p>
-                Outside of code, I compete in athletics. I’ve represented IIT Ropar at the Inter-IIT Sports Meet and won a silver medal at the intra-college championship in 2024.
-              </p>
-            </div>
-            <div class="stats">
-              <div class="stat"><strong>8.55</strong><span>CGPA</span></div>
-              <div class="stat"><strong>1504</strong><span>Codeforces peak</span></div>
-              <div class="stat"><strong>500+</strong><span>DSA problems</span></div>
-            </div>
+      <div class="wrap split">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Who I am</p>
+        </div>
+        <div>
+          <div class="about-text">
+            <p>
+              I’m a B.Tech student in Computer Science and Engineering at the Indian Institute of Technology, Ropar. I like understanding the whole stack: building web platforms with clean APIs, and simulating how a CPU pipeline or a cache actually behaves.
+            </p>
+            <p>
+              Outside of code, I compete in athletics. I’ve represented IIT Ropar at the Inter-IIT Sports Meet and won a silver medal at the intra-college championship in 2024.
+            </p>
           </div>
 
-          <div class="tabs">
-            <div class="tab-list" role="tablist" aria-label="Background">
-              <button class="tab" type="button" role="tab" id="tab-skills" aria-controls="panel-skills" aria-selected="true">Skills</button>
-              <button class="tab" type="button" role="tab" id="tab-education" aria-controls="panel-education" aria-selected="false">Education</button>
-              <button class="tab" type="button" role="tab" id="tab-coursework" aria-controls="panel-coursework" aria-selected="false">Coursework</button>
-            </div>
+          <div class="bento">
+            <div class="card stat"><strong data-count="8.55" data-decimals="2">8.55</strong><p>CGPA</p></div>
+            <div class="card stat"><strong data-count="1504">1504</strong><p>Codeforces peak</p></div>
+            <div class="card stat"><strong data-count="500" data-suffix="+">500+</strong><p>DSA problems</p></div>
 
-            <div role="tabpanel" id="panel-skills" aria-labelledby="tab-skills" tabindex="0">
+            <div class="card wide">
+              <h3>Skills</h3>
               <dl class="details">
                 <div><dt>Languages</dt><dd>C, C++, Python, JavaScript, SQL</dd></div>
                 <div><dt>Web &amp; backend</dt><dd>React, Node.js, Express, HTML/CSS, REST APIs</dd></div>
@@ -107,17 +110,19 @@
               </dl>
             </div>
 
-            <div role="tabpanel" id="panel-education" aria-labelledby="tab-education" tabindex="0">
-              <dl class="details">
-                <div><dt>2023–2027</dt><dd>B.Tech in Computer Science and Engineering, IIT Ropar<br>CGPA: 8.55</dd></div>
-                <div><dt>2022–2023</dt><dd>Senior Secondary (CBSE)<br>90.0%</dd></div>
-                <div><dt>2019–2020</dt><dd>Secondary (CBSE)<br>89.8%</dd></div>
-              </dl>
+            <div class="card">
+              <h3>Education</h3>
+              <ol class="timeline">
+                <li><p class="meta">2023–2027</p><p>B.Tech CSE, IIT Ropar<br>CGPA: 8.55</p></li>
+                <li><p class="meta">2022–2023</p><p>Senior Secondary (CBSE)<br>90.0%</p></li>
+                <li><p class="meta">2019–2020</p><p>Secondary (CBSE)<br>89.8%</p></li>
+              </ol>
             </div>
 
-            <div role="tabpanel" id="panel-coursework" aria-labelledby="tab-coursework" tabindex="0">
+            <div class="card">
+              <h3>Coursework</h3>
               <ul class="chips">
-                <li>Data Structures &amp; Algorithms</li>
+                <li>DSA</li>
                 <li>Operating Systems</li>
                 <li>DBMS</li>
                 <li>Computer Networks</li>
@@ -135,10 +140,13 @@
     </section>
 
     <section id="experience" class="section">
-      <div class="wrap">
-        <h2>Experience</h2>
-        <article class="card job">
-          <div class="job-head">
+      <div class="wrap split">
+        <div class="section-title">
+          <h2>Experience</h2>
+          <p>Where I’ve worked</p>
+        </div>
+        <article class="card">
+          <div class="row-head">
             <h3>Software Engineer Intern</h3>
             <p class="meta">Jun – Jul 2026</p>
           </div>
@@ -156,52 +164,79 @@
     </section>
 
     <section id="projects" class="section">
-      <div class="wrap">
-        <h2>Projects</h2>
-        <div class="card-grid">
+      <div class="wrap split">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>What I’ve built</p>
+        </div>
+        <div class="projects">
 
-          <article class="card">
+          <article class="card project">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/><path d="M5 12h4l2-3 2 5 2-2h4"/></svg></div>
-            <h3>Snehita Well-Being</h3>
-            <p class="meta">Feb – May 2026</p>
-            <p>A confidential mental health counselling platform for IIT Ropar, with appointments and profile records, JWT authentication, role-based access and separate counsellor and student portals. MVC backend, containerized with Docker.</p>
-            <ul class="chips">
-              <li>React</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Docker</li>
-            </ul>
-            <a class="card-link" href="https://github.com/Rajat-14/DEP26.D08-Snehita-Wellbeing">View code →</a>
+            <div class="project-body">
+              <div class="row-head">
+                <h3>Snehita Well-Being</h3>
+                <p class="meta">Feb – May 2026</p>
+              </div>
+              <p>A confidential mental health counselling platform for IIT Ropar, with appointments and profile records, JWT authentication, role-based access and separate counsellor and student portals. MVC backend, containerized with Docker.</p>
+              <div class="project-foot">
+                <ul class="chips">
+                  <li>React</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Docker</li>
+                </ul>
+                <a class="card-link" href="https://github.com/Rajat-14/DEP26.D08-Snehita-Wellbeing">View code →</a>
+              </div>
+            </div>
           </article>
 
-          <article class="card">
+          <article class="card project">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div>
-            <h3>RISC-V Assembler &amp; 5-Stage Pipeline Simulator</h3>
-            <p class="meta">Feb – Apr 2025</p>
-            <p>An assembler and cycle-accurate CPU simulator for a large RISC-V subset. A Branch Target Buffer with 1-bit prediction reduces control hazards, and configurable forwarding and stalls compare pipelined and non-pipelined throughput.</p>
-            <ul class="chips">
-              <li>C/C++</li><li>RISC-V</li><li>Pipeline hazards</li><li>Branch prediction</li>
-            </ul>
-            <a class="card-link" href="https://github.com/Rajat-14/CS204_Group_Project">View code →</a>
+            <div class="project-body">
+              <div class="row-head">
+                <h3>RISC-V Assembler &amp; 5-Stage Pipeline Simulator</h3>
+                <p class="meta">Feb – Apr 2025</p>
+              </div>
+              <p>An assembler and cycle-accurate CPU simulator for a large RISC-V subset. A Branch Target Buffer with 1-bit prediction reduces control hazards, and configurable forwarding and stalls compare pipelined and non-pipelined throughput.</p>
+              <div class="project-foot">
+                <ul class="chips">
+                  <li>C/C++</li><li>RISC-V</li><li>Pipeline hazards</li><li>Branch prediction</li>
+                </ul>
+                <a class="card-link" href="https://github.com/Rajat-14/CS204_Group_Project">View code →</a>
+              </div>
+            </div>
           </article>
 
-          <article class="card">
+          <article class="card project">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-            <h3>AIMS: Academic Information System</h3>
-            <p class="meta">Jan – Feb 2026</p>
-            <p>A course enrollment portal with separate workflows for students, instructors, faculty advisors and admins. Two-step approvals catch prerequisite violations, backed by modular REST APIs with real-time updates.</p>
-            <ul class="chips">
-              <li>Node.js</li><li>Express</li><li>PostgreSQL</li>
-            </ul>
-            <a class="card-link" href="https://github.com/rohit4kk/AIMS_Portal">View code →</a>
+            <div class="project-body">
+              <div class="row-head">
+                <h3>AIMS: Academic Information System</h3>
+                <p class="meta">Jan – Feb 2026</p>
+              </div>
+              <p>A course enrollment portal with separate workflows for students, instructors, faculty advisors and admins. Two-step approvals catch prerequisite violations, backed by modular REST APIs with real-time updates.</p>
+              <div class="project-foot">
+                <ul class="chips">
+                  <li>Node.js</li><li>Express</li><li>PostgreSQL</li>
+                </ul>
+                <a class="card-link" href="https://github.com/rohit4kk/AIMS_Portal">View code →</a>
+              </div>
+            </div>
           </article>
 
-          <article class="card">
+          <article class="card project">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.3 8.2l4.5 7.6M17.7 8.2l-4.5 7.6"/></svg></div>
-            <h3>Cache Performance: LRU vs Splay Tree</h3>
-            <p class="meta">Jun 2025</p>
-            <p>Route caching in a traffic simulation: Dijkstra’s routing on large city graphs, paired with LRU and splay tree caches. Benchmarks hit/miss ratios and rotation cost, showing the locality benefits of self-adjusting trees for real-time navigation.</p>
-            <ul class="chips">
-              <li>C++</li><li>Dijkstra</li><li>LRU cache</li><li>Splay tree</li>
-            </ul>
-            <a class="card-link" href="https://github.com/rohit4kk/DSA_Project-SplayTree-">View code →</a>
+            <div class="project-body">
+              <div class="row-head">
+                <h3>Cache Performance: LRU vs Splay Tree</h3>
+                <p class="meta">Jun 2025</p>
+              </div>
+              <p>Route caching in a traffic simulation: Dijkstra’s routing on large city graphs, paired with LRU and splay tree caches. Benchmarks hit/miss ratios and rotation cost, showing the locality benefits of self-adjusting trees for real-time navigation.</p>
+              <div class="project-foot">
+                <ul class="chips">
+                  <li>C++</li><li>Dijkstra</li><li>LRU cache</li><li>Splay tree</li>
+                </ul>
+                <a class="card-link" href="https://github.com/rohit4kk/DSA_Project-SplayTree-">View code →</a>
+              </div>
+            </div>
           </article>
 
         </div>
@@ -209,9 +244,12 @@
     </section>
 
     <section id="achievements" class="section">
-      <div class="wrap">
-        <h2>Achievements</h2>
-        <div class="card-grid three">
+      <div class="wrap split">
+        <div class="section-title">
+          <h2>Achievements</h2>
+          <p>Milestones</p>
+        </div>
+        <div class="card-grid">
           <article class="card">
             <h3><a href="https://codeforces.com/profile/deep_gill">Codeforces Specialist</a></h3>
             <p class="meta">Peak rating 1504</p>
@@ -233,20 +271,16 @@
 
     <section id="contact" class="section">
       <div class="wrap">
-        <h2>Get in touch</h2>
-        <div class="contact-grid">
-          <div>
-            <p class="contact-intro">I’m looking for software engineering roles and research opportunities.</p>
-            <ul class="contact-list">
-              <li><a href="mailto:2023csb1146@iitrpr.ac.in"><svg aria-hidden="true"><use href="#i-mail"/></svg>2023csb1146@iitrpr.ac.in</a></li>
-              <li><a href="tel:+917737458709"><svg aria-hidden="true"><use href="#i-phone"/></svg>+91-7737458709</a></li>
-            </ul>
-            <div class="socials">
-              <a href="https://github.com/20231146" aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
-              <a href="https://www.linkedin.com/in/pradeep-singh-gill-a82810286/" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
-            </div>
-            <a class="btn ghost" href="PradeepSingh_Resume.pdf" download>Download resume</a>
-          </div>
+        <div class="contact-panel">
+          <h2>Get in touch</h2>
+          <p class="contact-intro">I’m looking for software engineering roles and research opportunities.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:2023csb1146@iitrpr.ac.in"><svg aria-hidden="true"><use href="#i-mail"/></svg>2023csb1146@iitrpr.ac.in</a></li>
+            <li><a href="tel:+917737458709"><svg aria-hidden="true"><use href="#i-phone"/></svg>+91-7737458709</a></li>
+            <li><a href="https://github.com/20231146"><svg aria-hidden="true"><use href="#i-github"/></svg>GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/pradeep-singh-gill-a82810286/"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+            <li><a href="PradeepSingh_Resume.pdf" download><svg aria-hidden="true"><use href="#i-file"/></svg>Resume</a></li>
+          </ul>
 
           <!-- GitHub Pages has no form backend: FormSubmit emails submissions to the address below.
                The first submission sends an activation link to that inbox. -->
@@ -254,12 +288,14 @@
             <input type="hidden" name="_subject" value="New message from your portfolio">
             <input type="hidden" name="_next" value="https://20231146.github.io/portfolio/thanks.html">
             <p class="hidden"><label>Don’t fill this out: <input name="_honey" tabindex="-1" autocomplete="off"></label></p>
-            <label>Your name
-              <input type="text" name="name" required autocomplete="name">
-            </label>
-            <label>Your email
-              <input type="email" name="email" required autocomplete="email">
-            </label>
+            <div class="form-row">
+              <label>Your name
+                <input type="text" name="name" required autocomplete="name">
+              </label>
+              <label>Your email
+                <input type="email" name="email" required autocomplete="email">
+              </label>
+            </div>
             <label>Message
               <textarea name="message" required></textarea>
             </label>
